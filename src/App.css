@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #f9fafc;
+    color: #333;
+}
+
+.App {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4a90e2;
+}
+
+p {
+    text-align: center;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+p.error {
+    color: #d9534f;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f5f5f5;
+    margin: 8px 0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+ul li:hover {
+    background: #e9ecef;
+}
+
+ul li button {
+    background: #d9534f;
+    color: #fff;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+ul li button:hover {
+    background: #c9302c;
+}
+
+.add-product {
+    margin-top: 30px;
+    background: #f9fafc;
+    padding: 20px;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+}
+
+.add-product form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.add-product label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+}
+
+.add-product input[type="text"],
+.add-product input[type="number"] {
+    margin-top: 5px;
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.add-product input[type="text"]:focus,
+.add-product input[type="number"]:focus {
+    outline: 3px solid #aad2ff;
+    border: 1px solid #4a90e2;
+}
+
+.add-product input[type="submit"] {
+    background: #4a90e2;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.add-product input[type="submit"]:hover {
+    background: #357ab8;
+}
+
+.add-product input[type="submit"]:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+    .App {
+        padding: 10px;
+    }
+
+    ul li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .add-product form {
+        gap: 10px;
+    }
+}
